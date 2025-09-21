@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back{
+    width: 20%;
+    height: 80%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    img{
+        height: 10%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out,left 0.3s ease-in-out;
+    }
+
+    img.active{
+        transform: scale(2.3);
+    }
+
+    img.position{
+        position: absolute;
+        left: 15rem;
+        transform: scale(1);
+    }
+}   
